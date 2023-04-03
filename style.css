@@ -94,19 +94,4 @@ i {
   height: 1rem;
 }
 
-/* effect container styling */
-.effects-container {
-  align-items: center;
-  margin: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
 
-/* download buttons */
-#imagePNG {
-  cursor: pointer;
-}
-
-#imageJPG {
-  cursor: pointer;
-}

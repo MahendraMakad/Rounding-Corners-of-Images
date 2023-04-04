@@ -46,15 +46,19 @@ radiusSlider.addEventListener('input', function () {
   canvas.style.borderRadius = `${radiusValue}%`;
 });
 
-// change the background color of the container based on the value of the color picker
-bgColorPicker.addEventListener('input', function () {
-  const bgColorValue = this.value;
-  document.querySelector('#image-container').style.backgroundColor = bgColorValue;
-});
+// // change the background color of the container based on the value of the color picker
+// bgColorPicker.addEventListener('input', function () {
+//   const bgColorValue = this.value;
+//   // document.querySelector('#image-container').style.backgroundColor ='transparent';
+//   // canvas.style.backgroundColor = 'rgba(0, 0, 0, 0)';
+// });
 
 // download the modified canvas when the button is clicked
 downloadButton.addEventListener('click', function () {
-  html2canvas(document.querySelector('#image-container')).then(function (canvas) {
+  html2canvas(document.querySelector('#my-canvas'),{
+    backgroundColor: null,
+    useCORS: true
+  }).then(function (canvas) {
     const downloadCanvas = document.createElement('canvas');
     downloadWidth = originalWidth;
     downloadHeight = originalHeight;

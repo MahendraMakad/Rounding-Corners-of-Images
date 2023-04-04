@@ -42,8 +42,8 @@ fileInput.addEventListener('change', function (event) {
 
 // change the border radius of the canvas based on the value of the slider
 radiusSlider.addEventListener('input', function () {
-  const radiusValue = this.value;
-  canvas.style.borderRadius = `${radiusValue}%`;
+ var radius = this.value;
+  canvas.style.borderRadius = radius + 'px';
 });
 
 // // change the background color of the container based on the value of the color picker

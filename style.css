@@ -12,13 +12,6 @@ body {
   background-color: blueviolet;
 }
 
-#image-container {
-  display: inline-block;
-  background-color: #ffffff;
-  justify-content: center;
-  align-content: center;
-}
-
 .outer-div {
   display: flex;
   margin-left: auto;
@@ -26,8 +19,17 @@ body {
   justify-content: center;
 }
 
+#image-container {
+  display: inline-block;
+  background-color: transparent;
+  justify-content: center;
+  align-content: center;
+}
+
+
 #my-canvas {
   display: inline-block;
+  background-color: transparent;
 }
 
 #download-button {
@@ -94,4 +96,19 @@ i {
   height: 1rem;
 }
 
+/* effect container styling */
+.effects-container {
+  align-items: center;
+  margin: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
 
+/* download buttons */
+#imagePNG {
+  cursor: pointer;
+}
+
+#imageJPG {
+  cursor: pointer;
+}
